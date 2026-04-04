@@ -1,8 +1,8 @@
-package Aula01;
+package Aula02;
 
-class caneta{
-     String modelo;
-     String cor;
+public class caneta{
+     public String modelo;
+     public String cor;
      Double ponta;
      Integer carga;
      Boolean tampada;
@@ -22,20 +22,12 @@ class caneta{
             System.out.println("erro");
         } else System.out.println("rabisca");
     }
-}
-public class A01{
-    static void main(String[] args) {
-        caneta c1 = new caneta();
-        c1.cor = "Azul";
-        c1.ponta = 0.5;
-        c1.tampada = false;
-        c1.rabiscar();
 
-
-        caneta c2 = new caneta();
-        c2.cor = "Vermelho";
-        c2.ponta = 1.0;
-        c2.tampada = false;
-        c2.tampar();
+    public void status() {
+        System.out.println("Modelo: " + this.modelo);
+        System.out.println("Cor: " + this.cor);
+        System.out.println("Ponta: " + this.ponta);
+        System.out.println("Carga: " + this.carga + "%");
+        System.out.println("Tampada: " + this.tampada);
     }
 }
